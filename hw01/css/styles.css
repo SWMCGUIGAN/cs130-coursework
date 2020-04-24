@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+
+header {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffb028;
+  border: solid 1px #000;
+}
+
+.projects{
+  margin: 35px;
+  padding: 15px;
+  background-color: #ffe921;
+  border: solid 1px #000;
+}
+
+.big{
+  font-size: 40px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.work{
+  margin: 25px;
+  padding: 20px;
+  background-color: #bcff21;
+  border: solid 1px #000;
+}
+
+.edu{
+  margin: 30px;
+  padding: 25px;
+  background-color: #ffb028;
+  border: solid 1px #000;
+}
+
+.social{
+  margin: 15px;
+  padding: 25px;
+  background-color: #ffe921;
+  border: solid 1px #000;
+}
+
+.font1 {
+  font-family: 'Fredoka One';
+}
+
+.font2 {
+   font-family: 'Lato';
+}
+
+p, a {
+   font-family: 'Lato';
+}
+
+img{
+  font-family: 'Lato';
+  color: gray;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
