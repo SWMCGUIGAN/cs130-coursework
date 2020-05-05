@@ -1,0 +1,282 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #fff;
+}
+a, a:hover, a:visited, a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/**********/
+/* Layout */
+/**********/
+aside, footer, header, nav, section, article {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    overflow: hidden;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto 100px;
+    grid-template-areas:
+       "left main"
+       "bottom bottom";
+    height: 100vh;
+}
+aside {
+    background-color: #000;
+    grid-area: left;
+}
+
+#h1:hover, #s1:hover {
+  color: #FFF;
+}
+
+header {
+    background: #111;
+    position: fixed;
+    width: calc(100vw - 250px);
+    left: 250px;
+}
+
+main {
+    background: #111;
+    grid-area: main;
+    min-height: calc(350px);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 3;
+}
+
+nav {
+    width: 500px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+}
+
+nav a {
+  margin-left: 35px;
+}
+
+.midbar, .selected {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.midbar:hover {
+  border-bottom-width: thick;
+  border-bottom-color: #40f;
+  border: solid #40f43a 0px;
+  border-bottom-width: 3px;
+}
+
+footer {
+    background: #222;
+    grid-area: bottom;
+}
+
+#featured-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.play-button{
+  display: inline-block;
+  margin-left: 85px;
+  background-color: #222;
+  padding:17px;
+  border-radius: 25px;
+  color: #222;
+}
+
+#o1:hover #m1 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o2:hover #m2 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o3:hover #m3 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o4:hover #m4 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o5:hover #m5 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o6:hover #m6 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o7:hover #m7 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o8:hover #m8 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o9:hover #m9 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+#o10:hover #m10 {
+  color: #FFF;
+  background-color: #40f43a;
+}
+
+h1 {
+  color: #CCC;
+  font-size: 35px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.fa-home, .fa-search {
+padding: 10px;
+margin-left: 30px;
+}
+
+#h1, #s1{
+  color: #CCC;
+}
+
+.selected-side {
+    margin-left: 30px;
+    padding: 10px;
+    border: solid #40f43a 0px;
+    border-left-width: 3px;
+}
+
+.selected {
+    font-family: Helvetica, sans-serif;
+    border-bottom-width: thick;
+    border-bottom-color: #40f;
+    border: solid #40f43a 0px;
+    border-bottom-width: 3px;
+}
+
+.artist-card {
+  height: auto;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 10px;
+  width: 17%;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 150px;
+}
+
+.image-div {
+    background-size: cover;
+    width: 10%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 50px;
+  padding-right: 25px;
+}
+
+#profile {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size:13px;
+  width: 110px;
+  background-color: #222;
+  padding: 7px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#profile:hover, #upgrade:hover {
+  background-color: #555;
+}
+
+#upgrade {
+  font-size: 13.5px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 110px;
+  border: solid 2px #CCC;
+  text-align: center;
+}
+
+/***************************/
+/* Accessories & Florishes */
+/***************************/
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 16px;
+    background-clip: padding-box;
+    min-height: 30px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.3);
+}
+
+@media screen and (max-width: 1200px) {
+    .artist-card {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .artist-card {
+        width: 40%;
+    }
+    aside{
+      display: none;
+      flex-direction: none;
+    }
+    body {
+        overflow: hidden;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 100px;
+        grid-template-areas:
+           "main"
+           "bottom";
+        height: 100vh;
+    }
+}
